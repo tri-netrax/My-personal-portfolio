@@ -24,19 +24,18 @@ Designed to be fully responsive with smooth UI interactions.
 - **CSS3**  
 - **JavaScript**  
 - **Formspree (Contact Form)**  
-
+```
 portfolio/
  ├─ index.html
  ├─ css/
- │   └─ style.css( files)
+ │   └─ style.css(All css files)
  ├─ js/
- │   └─ script.js
+ │   └─ script.js(all js files)
  └─ images/
      ├─ logo.png
      ├─ profile.jpg
      └─ project1.png
-
----
+```
 
 ## 📞 Contact Me
 
@@ -45,7 +44,7 @@ If you want to reach out, feel free to contact me through the form on my website
 ---
 
 ## 📌 Live Portfolio  
-🔗 https://tri-netrax.github.io/personal-portfolio/
+🔗 https://tri-netrax.github.io/My-personal-portfolio/
 
 ---
 
