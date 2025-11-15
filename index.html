@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seependra Singh | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/project.css">
+  <link rel="stylesheet" href="./css/skills.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR (Mobile Only) -->
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>    
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <div class="sidebar-socials social-icons">
+      <a href="https://www.linkedin.com/in/seependra-singh-81ab63259/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tri-netrax"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/__sky07___/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Seependra <span>Singh</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-btn" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="name">Seependra Singh</span></h1>
+      <h2 class="typewriter"></h2>
+      <p>Full Stack Developer passionate about crafting advanced digital experiences.</p>
+
+      <a class="btn" href="#">Download Resume</a>
+
+      <div class="hero-socials social-icons">
+        <a href="https://www.linkedin.com/in/seependra-singh-81ab63259/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/tri-netrax"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/__sky07___/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <div class="img-glow">
+        <img src="./img/profile.jpeg" alt="profile">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h1 class="section-title">About Me</h1>
+
+    <div class="about-container">
+      <div class="about-img">
+        <img src="./img/profile.jpeg" alt="">
+      </div>
+      
+      <div class="about-text">
+        <h2>I'm Seependra — Full Stack Developer</h2>
+        <p>
+          Hi, I’m Seependra Singh, a MERN Stack Developer with strong foundations in DSA using Java. I love building modern, responsive, and high-performance web applications that solve real-world problems. Constantly learning and experimenting with new technologies, I aim to create solutions that are both efficient and elegant.
+
+Outside of coding, I enjoy exploring tech innovations, solving programming challenges, and reading about software development trends. I’m driven by curiosity and the desire to turn ideas into impactful digital experiences.
+        </p>
+
+        <div class="about-tags">
+          <span>Full Stack</span>
+          <span>Web Apps</span>
+          <span>UI/UX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h1 class="section-title">Skills</h1>
+
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">REST APIs</div>
+      <div class="skill-card">Tailwind</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Data Structures & Algorithms</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- Education  -->
+   <section id="education" class="education-section">
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-container">
+
+    <div class="edu-item" >
+          
+      <h3><i class="fa-solid fa-graduation-cap"></i> B.Tech in Computer Science</h3>
+      <p>AITM College Kanpur</p>
+    </div>
+
+    <div class="edu-item">
+
+      <h3><i class="fa-solid fa-book"></i> Intermediate / 10+2</h3>
+      <p>S S V M Civil lines, Budaun </p>
+    </div>
+
+    <div class="edu-item">
+        
+      <h3><i class="fa-solid fa-school"></i> High School</h3>
+      <p>M S I C Kalan, Shahjahanpur</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h1 class="section-title">Projects</h1>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" />
+        <h3>Project 1</h3>
+        <p>In working Progress...</p>
+        <div class="card-btns">
+          <a class="repo" href="#">Repo</a>
+          <a class="demo" href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" />
+        <h3>Project 2</h3>
+        <p>In working Progress..</p>
+        <div class="card-btns">
+          <a class="repo" href="#">Repo</a>
+          <a class="demo" href="#">Live Demo</a>
+        </div>
+      </div>
+
+       <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" />
+        <h3>Project 3</h3>
+        <p>In working Progress..</p>
+        <div class="card-btns">
+          <a class="repo" href="#">Repo</a>
+          <a class="demo" href="#">Live Demo</a>
+        </div>
+      </div>
+
+       <div class="project-card">
+        <img src="https://via.placeholder.com/350x200" />
+        <h3>Project 4</h3>
+        <p>In working Progress..</p>
+        <div class="card-btns">
+          <a class="repo" href="#">Repo</a>
+          <a class="demo" href="#">Live Demo</a>
+        </div>
+      </div>
+
+
+    
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h1 class="section-title">Contact Me</h1>
+    <p class="contact-sub">Feel free to reach out!</p>
+
+    <div class="contact-container">
+
+      <form class="contact-form" action="https://formspree.io/f/meovajgb" method="POST" >
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button class="contact-btn" type="submit">Send Message</button>
+        <p id="form-status" class="success-toast"></p>
+      </form>
+
+      <!-- <div class="contact-side-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div> -->
+
+      <!-- Status message -->
+ 
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-icons  social-icons" >
+      <a href="https://www.linkedin.com/in/seependra-singh-81ab63259/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tri-netrax"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/__sky07___/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 Seependra Singh. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

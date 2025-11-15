@@ -1,0 +1,273 @@
+
+/* ========================= CONTACT FORM ========================= */
+/* ------------------------------
+   CONTACT –  UI
+---------------------------------- */
+
+.contact {
+  padding: 100px 10%;
+  background: #0d0e15;
+  color: #e9e6ff;
+  position: relative;
+}
+
+/* soft top & bottom borders */
+.contact::before,
+.contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: linear-gradient(90deg, #ffffff00, #8d86ff55, #ffffff00);
+}
+
+.contact::before { top: 0; }
+.contact::after { bottom: 0; }
+
+/* headings */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #f2f1ff;
+}
+
+.contact-sub {
+  text-align: center;
+  margin-top: -10px;
+  opacity: 0.75;
+  font-size: 16px;
+  color: #c8c7db;
+}
+
+.contact-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ================================
+      CONTACT FORM -effect
+================================= */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(15px);
+  padding: 35px 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+}
+
+/* form groups */
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  display: block;
+  font-size: 15px;
+  color: #dedcff;
+}
+
+/* inputs */
+/* INPUT + TEXTAREA – PREMIUM UNDERLINE EFFECT */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid rgba(255,255,255,0.14);
+  transition: 0.25s ease;
+  position: relative;
+}
+
+/* subtle hover */
+.form-group input:hover,
+.form-group textarea:hover {
+  border-bottom-color: #bdb8ff;
+}
+
+/* Focus = animated underline */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: transparent;
+  background: rgba(255,255,255,0.10);
+}
+
+/* animated underline container */
+.form-group {
+  position: relative;
+}
+
+/* Sliding underline element */
+.form-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #6b63ff, #928cff, #6b63ff);
+  background-size: 200%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.35s ease;
+  border-radius: 50px;
+}
+
+/* Hover = underline expands */
+.form-group:hover::after {
+  transform: scaleX(1);
+}
+
+/* Focus = line stays + animate left-right */
+.form-group input:focus ~ .underline,
+.form-group textarea:focus ~ .underline {}
+
+.form-group:focus-within::after {
+  transform: scaleX(1);
+  animation: slideLine 2s linear infinite;
+}
+
+/* Animation */
+@keyframes slideLine {
+  0% { background-position: 0%; }
+  50% { background-position: 200%; }
+  100% { background-position: 0%; }
+}
+
+
+/* placeholder disappear while typing */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+  transition: 0.2s;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+  color: transparent;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+/* ================================
+        BUTTON 
+================================= */
+.contact-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6b63ff, #928cff);
+  color: white;
+  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(70, 63, 255, 0.25);
+}
+
+/* subtle hover */
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(70, 63, 255, 0.40);
+}
+
+/* ============================
+        RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  .contact { padding: 80px 7%; }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .contact-container {
+    gap: 40px;
+  }
+
+  .contact-form {
+    padding: 28px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title { font-size: 28px; }
+  .contact-form { padding: 24px; }
+}
+
+
+/* CONTACT BOX WAVE LINES */
+.contact-form {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top wave */
+.contact-form::before,
+.contact-form::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  height: 3px;
+  background: linear-gradient(90deg, #756bff, #c5bfff, #756bff);
+  background-size: 200%;
+  animation: waveMove 5s ease-in-out infinite;
+}
+
+.contact-form::before {
+  top: 0;
+}
+
+.contact-form::after {
+  bottom: 0;
+  animation-delay: -2.5s;
+}
+
+/* Animation */
+@keyframes waveMove {
+  0% { background-position: 0%; }
+  50% { background-position: 200%; }
+  100% { background-position: 0%; }
+}
+
+
+/* SUCCESS TOAST */
+.success-toast {
+  opacity: 0;
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #2ecc71;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+
+.success-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,179 @@
+
+/* ========================= SKILLS ========================= */
+.skills {
+  padding: 80px 10%;
+  
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 20px;
+  text-align: center;
+  background: #161722;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0 0 20px #4318ff22;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* button thoda upar uthta hai */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+.skill-card {
+  transition: .3s;
+  transform: scale(1);
+}
+
+.skill-card:hover {
+  transform: scale(1.08) rotate(1deg);
+  background: #1a1b29;
+  box-shadow: 0 8px 20px #4318ff55 inset;
+}
+
+.skills-grid:hover .skill-card:not(:hover) {
+  transform: scale(.93);
+  opacity: .6;
+}
+
+
+
+/* =============================Education=========================  */
+.education-section {
+  padding: 60px 20px;
+ /* background: #161722; */
+  text-align: center;
+}
+/* 
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+} */
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #10111d;
+  margin: 10px auto 0;
+  /* border-radius: 2px; */
+}
+
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.edu-item {
+  background: #161722;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #4318ff22;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);;
+}
+
+.edu-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.edu-item p {
+  font-size: 1rem;
+  color: white;
+}
+
+.edu-item h3 i {
+  margin-right: 10px; /* space between icon and text */
+  color: #4CAF50; /* primary theme color */
+}
+
+
+/* =========================
+   Education Card - Neon Left & Right Borders
+========================= */
+.edu-item {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background: #161722;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Neon Side Borders - only left & right */
+.edu-item::before,
+.edu-item::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 0%;
+  background: linear-gradient(#00eaff, #0070ff);
+  box-shadow: 0 0 10px #00eaff;
+  transition: 0.4s ease;
+  border-radius: 2px;
+}
+
+/* Left side */
+.edu-item::before {
+  left: 0;
+  top: 0;
+}
+
+/* Right side */
+.edu-item::after {
+  right: 0;
+  bottom: 0;
+}
+
+/* Hover effect - expand left & right borders */
+.edu-item:hover::before,
+.edu-item:hover::after {
+  height: 100%;
+}
+
+/* Card pop-up on hover */
+.edu-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
+
+/* Text styling */
+.edu-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.edu-item h3 i {
+  margin-right: 8px;
+  color: #00eaff;
+}
+
+.edu-item p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  color: #d4c2f7;
+}
+

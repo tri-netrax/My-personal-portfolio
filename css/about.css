@@ -1,0 +1,110 @@
+
+/* ========================= ABOUT ========================= */
+.about {
+  padding: 90px 10%;
+  background: #10111d;
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #4318ff44;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+.about-text p{
+    text-align: justify;
+}
+.about-tags span {
+  background: #4318ff33;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ABOUT — RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .about-img img {
+    width: 80%;
+    max-width: 260px;
+    border-radius: 18px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-text p {
+    text-align: left;   /* mobile me justify mat use karo */
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .about-tags {
+    text-align: center;
+  }
+}
+
+
+
+
+/* ================== ABOUT IMAGE EFFECT ================== */
+
+.about-img {
+  position: relative;
+  display: inline-block;
+  transition: transform .4s ease;
+}
+
+.about-img img {
+  border-radius: 18px;
+  transition: transform .4s ease, filter .4s ease, box-shadow .4s ease;
+}
+
+/* Glow + Slight Tilt */
+.about-img:hover img {
+  transform: scale(1.05) rotateZ(1.5deg);
+  box-shadow: 0 0 30px #4318ff66, 0 0 55px #ff4fd833;
+  filter: brightness(1.06);
+}
+
+/* Soft Light Behind Image */
+.about-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 115%;
+  height: 115%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background: linear-gradient(120deg, #4318ff33, #ff4fd822);
+  filter: blur(35px);
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.about-img:hover::after {
+  opacity: 1;
+}
+
